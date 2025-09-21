@@ -47,6 +47,43 @@ models/
 styles/
   globals.css
 ```
+## Roadmap / Ideas
+- Per-client aggregated analytics view and filters
+- Transcript preview table on analytics page
+- Export CSV/JSON of scores
+- Delete meetings/transcripts
+
+1) Sign In page
+- Path: `/login`
+- Clean card UI with tabs for Sign In / Sign Up.
+
+![Sign In](public/login.png)
+
+2) Sign Up page
+- Path: `/signup`
+- Create your account with name, organization, email, and password.
+
+![Sign Up](public/signup.png)
+
+3) Dashboard (Recent Meetings)
+- Path: `/dashboard`
+- Sidebar on the left, header actions on top.
+- Table of recent meetings. Click a row to open analytics.
+
+![Dashboard](public/demo/03-dashboard.png)
+
+4) New Meeting dialog
+- Click “New Meeting” on the dashboard.
+- Enter client/meeting name, paste or upload a transcript, click Analyze.
+
+![New Meeting Dialog](public/newmeetingdialog.png)
+
+5) Meeting Analytics page
+- Path: `/meetings/[id]`
+- KPI cards for the latest analysis.
+- Radar (current vs avg last 3), overall trend line, and grouped property bars.
+
+![Meeting Analytics](public/meetingalytics.png)
 
 ## Prerequisites
 - Node.js 18+ (Node 20 recommended)
@@ -69,10 +106,6 @@ GEMINI_API_KEY=<your_gemini_api_key>
 # Optional: choose a model you have access to
 GEMINI_MODEL=gemini-1.5-flash-latest
 ```
-
-Tips:
-- URL-encoding examples: `@` → `%40`, `#` → `%23`, `!` → `%21`, `$` → `%24`, `&` → `%26`, space → `%20`.
-- If you see `MongoAPIError: URI must include hostname...` or `bad auth`, quote the URI, include a database name (e.g. `meeting-analyzer`), and verify user credentials in Atlas.
 
 ## Install & Run
 ```bash
@@ -136,46 +169,8 @@ npm run dev
 - Do not commit `.env.local`.
 - Rotate keys if they were shared publicly.
 
-## Roadmap / Ideas
-- Per-client aggregated analytics view and filters
-- Transcript preview table on analytics page
-- Export CSV/JSON of scores
-- Delete meetings/transcripts
-
 ## Demo Walkthrough
 Below is a quick walkthrough of the main flows. You can capture your own screenshots and place them under `public/demo/` (these paths are just examples). If the images don’t render, make sure the files exist at the referenced paths or update the links accordingly.
-
-1) Sign In page
-- Path: `/login`
-- Clean card UI with tabs for Sign In / Sign Up.
-
-![Sign In](public/login.png)
-
-2) Sign Up page
-- Path: `/signup`
-- Create your account with name, organization, email, and password.
-
-![Sign Up](public/signup.png)
-
-3) Dashboard (Recent Meetings)
-- Path: `/dashboard`
-- Sidebar on the left, header actions on top.
-- Table of recent meetings. Click a row to open analytics.
-
-![Dashboard](public/demo/03-dashboard.png)
-
-4) New Meeting dialog
-- Click “New Meeting” on the dashboard.
-- Enter client/meeting name, paste or upload a transcript, click Analyze.
-
-![New Meeting Dialog](public/demo/04-new-meeting-dialog.png)
-
-5) Meeting Analytics page
-- Path: `/meetings/[id]`
-- KPI cards for the latest analysis.
-- Radar (current vs avg last 3), overall trend line, and grouped property bars.
-
-![Meeting Analytics](public/demo/05-meeting-analytics.png)
 
 How to add screenshots
 - Take screenshots in your browser, save them as PNGs under `public/demo/`.
