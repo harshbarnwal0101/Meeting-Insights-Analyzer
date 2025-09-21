@@ -70,7 +70,7 @@ styles/
 - Sidebar on the left, header actions on top.
 - Table of recent meetings. Click a row to open analytics.
 
-![Dashboard](public/demo/03-dashboard.png)
+![Dashboard](public/dashboard.png)
 
 4) New Meeting dialog
 - Click “New Meeting” on the dashboard.
