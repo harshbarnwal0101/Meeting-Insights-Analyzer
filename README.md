@@ -2,6 +2,8 @@
 
 A Next.js 14 (App Router) application that analyzes meeting transcripts with AI (Google Gemini) and visualizes insights. Users can authenticate, create meetings, upload/paste transcripts, and view analytics per meeting.
 
+WORKING LINK = The project is still not deployed but i can show you locally due to timing constraints
+
 ## Tech Stack
 - Next.js 14 (App Router) + React + TypeScript
 - NextAuth for authentication (Credentials provider)
