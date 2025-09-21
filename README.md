@@ -149,13 +149,13 @@ Below is a quick walkthrough of the main flows. You can capture your own screens
 - Path: `/login`
 - Clean card UI with tabs for Sign In / Sign Up.
 
-![Sign In](public/demo/01-login.png)
+![Sign In](public/login.png)
 
 2) Sign Up page
 - Path: `/signup`
 - Create your account with name, organization, email, and password.
 
-![Sign Up](public/demo/02-signup.png)
+![Sign Up](public/signup.png)
 
 3) Dashboard (Recent Meetings)
 - Path: `/dashboard`
